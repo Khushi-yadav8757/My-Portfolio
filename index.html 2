@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Kumari Yadav - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+        }
+        .stylish-heading {
+            background: linear-gradient(90deg, #00fffc, #fc00ff, #00fffc);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shine 3s linear infinite;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+        .hover-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        .neon-border {
+            border: 2px solid transparent;
+            transition: border 0.3s ease;
+        }
+        .neon-border:hover {
+            border: 2px solid #00fffc;
+        }
+        .subheading {
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-6xl font-extrabold mb-4 stylish-heading">Khushi Kumari Yadav</h1>
+            <p class="text-xl text-gray-300 subheading">B.Tech Student | Aspiring Data Engineer</p>
+        </header>
+
+        <!-- Rest of the content remains the same as previous version -->
+        <section class="mb-12 grid md:grid-cols-2 gap-8">
+            <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-card neon-border">
+                <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+                <p class="text-gray-300">
+                    A passionate second-year B.Tech student at KCC Institute of Technology, 
+                    driven by a dream to become a Data Engineer. I'm dedicated to leveraging 
+                    my programming skills to solve complex technological challenges.
+                </p>
+            </div>
+            <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-card neon-border">
+                <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+                <p class="text-gray-300">
+                    <strong>Phone:</strong> 8757595152<br>
+                    <strong>Email:</strong> khushishresth5@gmail.com
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-center mb-8">Skills</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-card neon-border">
+                    <h3 class="text-2xl font-semibold mb-4">C</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-4">
+                        <div class="bg-blue-500 h-4 rounded-full" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-card neon-border">
+                    <h3 class="text-2xl font-semibold mb-4">C++</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-4">
+                        <div class="bg-green-500 h-4 rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-card neon-border">
+                    <h3 class="text-2xl font-semibold mb-4">Python</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-4">
+                        <div class="bg-purple-500 h-4 rounded-full" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-semibold text-center mb-8">Future Goals</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-card neon-border">
+                    <h3 class="text-2xl font-semibold mb-4">Data Engineering</h3>
+                    <p class="text-gray-300">
+                        Aspiring to become a proficient Data Engineer, focusing on developing 
+                        robust data infrastructure, implementing advanced data pipelines, 
+                        and leveraging cutting-edge technologies in big data ecosystems.
+                    </p>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg hover-card neon-border">
+                    <h3 class="text-2xl font-semibold mb-4">Continuous Learning</h3>
+                    <p class="text-gray-300">
+                        Committed to continuous learning and skill enhancement in programming, 
+                        data technologies, and emerging computational methodologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-4 mt-8">
+            <p class="text-gray-400">&copy; 2024 Khushi Kumari Yadav. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Optional: Add some interactive JavaScript if needed
+        document.querySelectorAll('.hover-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'scale(1.05)';
+                card.style.transition = 'transform 0.3s ease';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
